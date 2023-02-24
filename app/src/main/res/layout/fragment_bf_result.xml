@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BfResultFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bf_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Seu percentual de gordura é:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:labelFor="@id/imc_value"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bf_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/seed"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bf_title"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:dividerColor="@color/seed_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bf_value" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bf_qualidade_prefixo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Seu percentual de gordura está:"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialDivider" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/bf_qualidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/seed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bf_qualidade_prefixo"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/materialDivider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="32dp"
+        app:dividerColor="@color/seed_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bf_qualidade" />
+
+    <com.google.android.material.textview.MaterialTextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Essa ferramenta dá apenas uma estimativa, e apesar de na maioria das vezes ter resultados muito fiéis a realidade, não substitui avaliação física."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/materialDivider2"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:paddingHorizontal="32dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

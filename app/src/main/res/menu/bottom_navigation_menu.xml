@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/measuresFragment"
+        android:icon="@drawable/graph"
+        android:title="@string/medir"/>
+
+    <item
+        android:id="@+id/evolutionFragment"
+        android:icon="@drawable/peso"
+        android:title="@string/pesos"
+        />
+</menu>

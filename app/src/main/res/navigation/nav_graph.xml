@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/measuresFragment">
+    <fragment
+        android:id="@+id/evolutionFragment"
+        android:name="com.mbs.progressocorporal.fragments.EvolutionFragment"
+        android:label="fragment_evolution"
+        tools:layout="@layout/fragment_evolution" />
+    <fragment
+        android:id="@+id/measuresFragment"
+        android:name="com.mbs.progressocorporal.fragments.MeasuresFragment"
+        android:label="fragment_measures"
+        tools:layout="@layout/fragment_measures" >
+        <action
+            android:id="@+id/action_measuresFragment_to_imcActivity"
+            app:destination="@id/imcActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/imcActivity"
+        android:name="com.mbs.progressocorporal.activitys.ImcActivity"
+        android:label="activity_imc"
+        tools:layout="@layout/activity_imc" />
+    <fragment
+        android:id="@+id/imcCalculateFragment"
+        android:name="com.mbs.progressocorporal.fragments.ImcCalculateFragment"
+        android:label="fragment_imc_calculate"
+        tools:layout="@layout/fragment_imc_calculate" >
+        <action
+            android:id="@+id/action_imcCalculateFragment_to_imcResultFragment"
+            app:destination="@id/imcResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imcResultFragment"
+        android:name="com.mbs.progressocorporal.fragments.ImcResultFragment"
+        android:label="fragment_imc_result"
+        tools:layout="@layout/fragment_imc_result" />
+</navigation>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Progresso Corporal</string>
+    <string name="medir">Medir</string>
+    <string name="pesos">Pesos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seu_progresso">Seu progresso:</string>
+    <string name="calculadora_de_gordura_corporal">Calculadora de gordura corporal</string>
+    <string name="homem">Homem</string>
+    <string name="mulher">Mulher</string>
+    <string name="calcular">Calcular!</string>
+    <string name="calculadora_de_imc">Calculadora de IMC</string>
+    <string name="abrir">Abrir!</string>
+    <string name="digite_seu_peso">Digite seu peso</string>
+    <string name="digite_sua_alturas">Digite sua altura</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="peso_obrigatorio_erro">Peso é obrigatório.</string>
+    <string name="altura_obrigatório_erro">Altura é obrigatório.</string>
+    <string name="seu_imc_prefixo">Seu IMC é:</string>
+    <string name="segundo_a_oms_seu_imc_est">Segundo a OMS, seu IMC está:</string>
+</resources>
